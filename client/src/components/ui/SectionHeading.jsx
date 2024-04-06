@@ -1,6 +1,10 @@
-const SectionHeading = ({ children }) => {
+const SectionHeading = ({ children, color = "" }) => {
   return (
-    <h1 className=" text-center mt-28 mb-16 font-semibold text-[3rem] text-blue-950">
+    <h1
+      className={`text-center mt-28 mb-16 font-semibold font-heading text-[3rem] text-${
+        color ? color : "blue-950"
+      } `}
+    >
       {children}
     </h1>
   );

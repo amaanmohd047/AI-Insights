@@ -3,9 +3,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'heading-sans': ["Noto Sans", "sans-serif"]
+        heading: ['Helvetica', "Titillium Web", "Noto Sans", "sans-serif"],
       },
     },
   },
   plugins: [],
 };
+
+//   font-family: "Titillium Web", sans-serif;

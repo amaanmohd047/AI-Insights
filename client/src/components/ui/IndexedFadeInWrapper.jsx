@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { indexedFadeInAnimation } from "../../utils/animation";
 
-function SkillCard({ children, index }) {
+function IndexedFadeInWrapper({ children, index=1 }) {
   return (
     <motion.span
       variants={indexedFadeInAnimation}
@@ -17,4 +17,4 @@ function SkillCard({ children, index }) {
   );
 }
 
-export default SkillCard;
+export default IndexedFadeInWrapper;

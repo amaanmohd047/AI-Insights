@@ -37,7 +37,8 @@ export const indexedFadeInAnimation = {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.05 * (index + 5),
+        duration: 0.5,
+        delay: 0.075 * index,
       },
     };
   },
