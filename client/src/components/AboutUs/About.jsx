@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <div id="aboutus">
-      <div className="mx-auto text-center max-w-[70vw] pb-10">
+      <div className="mx-auto pt-8 text-center max-w-[70vw] mb-20">
         <FadeInWrapper>
           <SectionHeading>About Us</SectionHeading>
         </FadeInWrapper>

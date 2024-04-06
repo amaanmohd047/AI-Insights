@@ -3,8 +3,8 @@ import "./style.css";
 import { useInView } from "react-intersection-observer";
 
 import FeatureCard from "./FeatureCard";
-import { features } from "../../utils/data";
 import ScrollDisabler from "./ScrollDisabler";
+import FadeInWrapper from "../ui/FadeInWrapper";
 // import { scrollToID } from "../../utils/scrollToID";
 
 const Features = () => {
@@ -30,12 +30,23 @@ const Features = () => {
         }`}
         ref={ref}
       >
-        {features.map((feat) => (
-          <FeatureCard key={feat.heading}>
-            <FeatureCard.Heading>{feat.heading}</FeatureCard.Heading>
-            <FeatureCard.Text>{feat.text}</FeatureCard.Text>
+        <FadeInWrapper>
+          <FeatureCard>
+            <FeatureCard.Image src="one-in-all-solution.png" />
           </FeatureCard>
-        ))}
+        </FadeInWrapper>
+
+        <FadeInWrapper>
+          <FeatureCard>
+            <FeatureCard.Heading>Precision Perfected</FeatureCard.Heading>
+            <FeatureCard.Text>
+              Our Prediction Models have proven themselves with high Accuracy,
+              predictive maintenance with 98%, demand forecasting and inventory
+              optimisation with 95%, and customer behaviour analytics with 90%,
+              with overall accuracy of 94%.
+            </FeatureCard.Text>
+          </FeatureCard>
+        </FadeInWrapper>
         <ScrollDisabler />
       </div>
     </div>

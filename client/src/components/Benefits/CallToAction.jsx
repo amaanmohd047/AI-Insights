@@ -23,7 +23,7 @@ const CallToAction = () => {
 
       <FadeInWrapper>
         <div className=" mt-10 w-full flex justify-center">
-          <Button type="secondary">Get In Touch</Button>
+          <Button type="secondary" >Get In Touch</Button>
         </div>
       </FadeInWrapper>
     </div>

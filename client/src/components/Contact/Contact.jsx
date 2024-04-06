@@ -17,38 +17,40 @@ export default function Contact() {
   }
 
   return (
-    <div className="mx-auto md:w-[80%] flex flex-col sm:mb-24 items-center justify-center text-center mb-36">
-      <FadeInWrapper>
-        <SectionHeading>Contact Us</SectionHeading>
-      </FadeInWrapper>
-      <div className="space-y-4">
+    <div className="w-full bg-indigo-50" id="contact">
+      <div className="mx-auto md:w-[80%] flex flex-col sm:mb-24 items-center justify-center text-center mb-36">
         <FadeInWrapper>
-          <p className="text-slate-regular mb-12 mt-2 text-sm lg:text-base">
-            Looking to collaborate on an exciting project? Interested in
-            discussing job opportunities or freelance work? I&apos;m all ears!
-          </p>
+          <SectionHeading>Contact Us</SectionHeading>
         </FadeInWrapper>
-        <div className="flex flex-col items-center justify-center gap-4">
+        <div className="space-y-4">
           <FadeInWrapper>
-            <a href="mailto:info@insightai.com" target="_blank">
-              <Button type="primary"> Say Hello </Button>
-            </a>
+            <p className="text-slate-regular mb-12 mt-2 text-sm lg:text-base">
+              Have questions or interested in learning more about our solutions?
+              Contact us today to speak with one of our experts.
+            </p>
           </FadeInWrapper>
+          <div className="flex flex-col items-center justify-center gap-4">
+            <FadeInWrapper>
+              <a href="mailto:info@insightai.com" target="_blank">
+                <Button type="secondary"> Say Hello </Button>
+              </a>
+            </FadeInWrapper>
+            <FadeInWrapper>
+              <button
+                onClick={handleSetCopy}
+                onBlur={handleResetCopy}
+                className="text-slate-600 text-sm lg:text-base font-mono tracking-tighter mt-2 underline underline-offset-2 hover:scale-105 hover:text-indigo-900 transition-all duration-200 ease-in-expo focus:text-indigo-900 focus:no-underline"
+              >
+                Get E-Mail {copied && "✔️ copied! "}
+              </button>
+            </FadeInWrapper>
+          </div>
           <FadeInWrapper>
-            <button
-              onClick={handleSetCopy}
-              onBlur={handleResetCopy}
-              className="text-slate-lightest text-sm lg:text-base font-mono tracking-tighter mt-2 underline underline-offset-4 hover:scale-105 hover:text-green-regular transition-all duration-200 ease-in-expo focus:text-green-regular focus:no-underline"
-            >
-              Get E-Mail {copied && "✔️ copied! "}
-            </button>
+            <p className="text-slate-600 mt-8 text-sm lg:text-base">
+              © InsightAI 2024. All Rights Reserved.
+            </p>
           </FadeInWrapper>
         </div>
-        <FadeInWrapper>
-          <p className="text-slate-regular mt-8 text-sm lg:text-base">
-            Let&apos;s work together to bring your ideas to life!
-          </p>
-        </FadeInWrapper>
       </div>
     </div>
   );
