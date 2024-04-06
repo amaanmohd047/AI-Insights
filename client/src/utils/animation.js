@@ -2,6 +2,10 @@ export const fadeInAnimation = {
   initial: { opacity: 0, y: 100 },
   animate: { opacity: 1, y: 0, transition: { type: "tween", duration: 0.5 } },
 };
+export const dropInAnimation = {
+  initial: { opacity: 0, y: -100 },
+  animate: { opacity: 1, y: 0, transition: { type: "tween", duration: 0.3 } },
+};
 
 export const slideInFromLeft = {
   initial: { opacity: 0, x: 300 },
@@ -22,7 +26,7 @@ export const slideInFromRight = {
     x: 0,
     transition: {
       type: "spring",
-      stiffness: 80,
+      stiffness: 120,
     },
   },
 };

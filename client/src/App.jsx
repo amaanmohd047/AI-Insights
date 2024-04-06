@@ -5,6 +5,7 @@ import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Benefits from "./components/Benefits/Benefits";
 import About from "./components/AboutUs/About";
 import Contact from "./components/Contact/Contact";
+import DropInWrapper from "./components/ui/DropInWrapper";
 // import Test from "./components/ui/Test";
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
       id="smooth-wrapper"
     >
       <div id="smooth-content">
-        <Navbar />
+        <DropInWrapper>
+          <Navbar />
+        </DropInWrapper>
         <Home />
         <FeaturesSection />
         <HowItWorks />
