@@ -5,7 +5,7 @@ import SlideInWrapper from "../ui/SlideInWrapper";
 
 const CallToAction = () => {
   return (
-    <div className="h-[70vh] bg-blue-950 p-10 ">
+    <div className="h-[70vh] bg-gradient-to-b from-blue-950 to-indigo-950 p-10 ">
       <SlideInWrapper direction="left">
         <SectionHeading color="white">
           Ready to Unlock Your Business Potential?
@@ -14,7 +14,7 @@ const CallToAction = () => {
 
       <FadeInWrapper>
         <div className="w-[60%] m-auto">
-          <h1 className="text-gray-300 text-center text-2xl font-heading-sans">
+          <h1 className="text-gray-200 text-center text-2xl font-heading-sans">
             Start your journey towards data-driven success today. Request a demo
             or get in touch with our experts to learn more
           </h1>

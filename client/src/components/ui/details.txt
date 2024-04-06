@@ -61,8 +61,13 @@ Whether it's predictive analysis, demand forecasting, customer behavior analytic
 With InsightAI, you can trust that your data-driven decisions are backed by the highest level of accuracy, enabling you to unlock new opportunities and achieve your business objectives with confidence."
 
 Section 8: Contact Section
-  Headline: Get in Touch
+  Headline: Get in Touch Contact Us
   Subheadline: Have questions or interested in learning more about our solutions? Contact us today to speak with one of our experts.
+  Button: Get In Touch
+  Email: Get Email
+
+  mailto:info@insightai.com
+
   Contact Form:
   Contact Information:
   Email: info@yourprojectname.com

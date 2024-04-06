@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 const ScrollDisabler = () => {
   const { ref, inView } = useInView({
-    threshold: 0.5, // Trigger when 50% of the target is visible
+    threshold: 0.2, // Trigger when 50% of the target is visible
   });
 
   useEffect(() => {

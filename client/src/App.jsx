@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Benefits from "./components/Benefits/Benefits";
 import About from "./components/AboutUs/About";
+import Contact from "./components/Contact/Contact";
 // import Test from "./components/ui/Test";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <HowItWorks />
         <Benefits />
         <About />
+        <Contact />
       </div>
     </div>
   );

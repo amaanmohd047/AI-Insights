@@ -3,7 +3,7 @@ import { fadeInAnimation } from "../../utils/animation";
 
 export default function FadeInWrapper({ children }) {
   return (
-    <motion.span
+    <motion.div
       variants={fadeInAnimation}
       initial="initial"
       whileInView="animate"
@@ -12,6 +12,6 @@ export default function FadeInWrapper({ children }) {
       }}
     >
       {children}
-    </motion.span>
+    </motion.div>
   );
 }
